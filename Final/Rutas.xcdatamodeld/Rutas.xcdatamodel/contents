@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Xcode 7.0">
+    <entity name="Posicion" syncable="YES">
+        <attribute name="latitud" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitud" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="ruta" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Ruta" inverseName="posiciones" inverseEntity="Ruta" syncable="YES"/>
+    </entity>
+    <entity name="Ruta" syncable="YES">
+        <attribute name="descripcion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="foto" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ruta" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="posiciones" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Posicion" inverseName="ruta" inverseEntity="Posicion" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Posicion" positionX="135" positionY="74" width="128" height="105"/>
+        <element name="Ruta" positionX="-63" positionY="-18" width="128" height="118"/>
+    </elements>
+</model>
