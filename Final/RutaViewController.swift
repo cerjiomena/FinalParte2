@@ -305,6 +305,19 @@ class RutaViewController: UIViewController, CLLocationManagerDelegate, MKMapView
     }
     
 
+    @IBAction func mostrarAcerca(sender: AnyObject) {
+        
+        
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let avc: AcercaViewController = storyboard.instantiateViewControllerWithIdentifier("about") as! AcercaViewController
+        avc.view.backgroundColor = UIColor.darkGrayColor()
+        avc.modalPresentationStyle = UIModalPresentationStyle.OverCurrentContext
+        
+        self.presentViewController(avc, animated: true, completion: nil)
+        
+
+        
+    }
 
 
 }

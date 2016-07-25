@@ -89,7 +89,7 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="flw-ab-loG">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
-                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="8TV-JN-Hk3"/>
+                                    <barButtonItem width="33" style="plain" systemItem="fixedSpace" id="8TV-JN-Hk3"/>
                                     <barButtonItem image="qr-solo" id="obe-jW-ruJ">
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
@@ -116,6 +116,20 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dWM-AV-RBQ">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                             </mapView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Jr-7o-k5z">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem width="294" style="plain" systemItem="fixedSpace" id="sgR-3J-2ew"/>
+                                    <barButtonItem systemItem="action" id="l43-lr-yXu">
+                                        <connections>
+                                            <action selector="compartir:" destination="3Eg-CM-1jB" id="boE-c4-iaM"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="64" width="400" height="44"/>
+                                </variation>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -131,6 +145,7 @@
                             <mask key="subviews">
                                 <exclude reference="flw-ab-loG"/>
                                 <exclude reference="dWM-AV-RBQ"/>
+                                <exclude reference="9Jr-7o-k5z"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="2vR-xj-dcA"/>
@@ -146,6 +161,7 @@
                             <mask key="subviews">
                                 <include reference="flw-ab-loG"/>
                                 <include reference="dWM-AV-RBQ"/>
+                                <include reference="9Jr-7o-k5z"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="2vR-xj-dcA"/>
@@ -728,6 +744,114 @@
             </objects>
             <point key="canvasLocation" x="1687.5" y="1139"/>
         </scene>
+        <!--Acerca View Controller-->
+        <scene sceneID="EJe-zc-DxI">
+            <objects>
+                <viewController storyboardIdentifier="about" id="Zlc-ju-BuZ" customClass="AcercaViewController" customModule="Final" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gQR-o6-58f"/>
+                        <viewControllerLayoutGuide type="bottom" id="pcZ-5E-6IJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lNq-Qo-7gh">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acerca del proyecto final:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISU-li-v6o">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developer:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6BW-3S-hpO">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sergio Mena 🤓" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7KZ-zt-P4Q">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Versión 1.1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H31-EF-tav">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BC9-JM-mhx">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="dismiss-small.png"/>
+                                <connections>
+                                    <action selector="dismissModalView:" destination="Zlc-ju-BuZ" eventType="touchUpInside" id="tUV-42-SXi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BC9-JM-mhx" firstAttribute="leading" secondItem="lNq-Qo-7gh" secondAttribute="leading" id="3z9-Ij-XhC"/>
+                            <constraint firstItem="ISU-li-v6o" firstAttribute="centerX" secondItem="6BW-3S-hpO" secondAttribute="centerX" id="4FJ-Sa-GE1">
+                                <variation key="widthClass=compact" constant="-2.5"/>
+                            </constraint>
+                            <constraint firstItem="BC9-JM-mhx" firstAttribute="top" secondItem="gQR-o6-58f" secondAttribute="bottom" constant="8" symbolic="YES" id="5yS-ya-4aw"/>
+                            <constraint firstItem="6BW-3S-hpO" firstAttribute="centerX" secondItem="7KZ-zt-P4Q" secondAttribute="centerX" id="6lZ-ng-fgT"/>
+                            <constraint firstItem="ISU-li-v6o" firstAttribute="top" secondItem="gQR-o6-58f" secondAttribute="bottom" constant="37" id="6qz-Zv-ZKs"/>
+                            <constraint firstItem="7KZ-zt-P4Q" firstAttribute="top" secondItem="6BW-3S-hpO" secondAttribute="bottom" constant="30" id="GXj-Ae-EGV"/>
+                            <constraint firstItem="ISU-li-v6o" firstAttribute="centerX" secondItem="lNq-Qo-7gh" secondAttribute="centerX" id="bxF-3e-NIj">
+                                <variation key="widthClass=compact" constant="-2"/>
+                            </constraint>
+                            <constraint firstItem="6BW-3S-hpO" firstAttribute="top" secondItem="ISU-li-v6o" secondAttribute="bottom" constant="65" id="jkl-aC-RVn"/>
+                            <constraint firstItem="H31-EF-tav" firstAttribute="top" secondItem="7KZ-zt-P4Q" secondAttribute="bottom" constant="98" id="tQI-ch-ZZf"/>
+                            <constraint firstItem="6BW-3S-hpO" firstAttribute="leading" secondItem="H31-EF-tav" secondAttribute="leading" id="wG3-eQ-N8k"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="ISU-li-v6o"/>
+                                <exclude reference="6BW-3S-hpO"/>
+                                <exclude reference="7KZ-zt-P4Q"/>
+                                <exclude reference="H31-EF-tav"/>
+                                <exclude reference="BC9-JM-mhx"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="3z9-Ij-XhC"/>
+                                <exclude reference="5yS-ya-4aw"/>
+                                <exclude reference="4FJ-Sa-GE1"/>
+                                <exclude reference="6qz-Zv-ZKs"/>
+                                <exclude reference="bxF-3e-NIj"/>
+                                <exclude reference="6lZ-ng-fgT"/>
+                                <exclude reference="jkl-aC-RVn"/>
+                                <exclude reference="wG3-eQ-N8k"/>
+                                <exclude reference="GXj-Ae-EGV"/>
+                                <exclude reference="tQI-ch-ZZf"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="ISU-li-v6o"/>
+                                <include reference="6BW-3S-hpO"/>
+                                <include reference="7KZ-zt-P4Q"/>
+                                <include reference="H31-EF-tav"/>
+                                <include reference="BC9-JM-mhx"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="3z9-Ij-XhC"/>
+                                <include reference="5yS-ya-4aw"/>
+                                <include reference="4FJ-Sa-GE1"/>
+                                <include reference="6qz-Zv-ZKs"/>
+                                <include reference="bxF-3e-NIj"/>
+                                <include reference="6lZ-ng-fgT"/>
+                                <include reference="jkl-aC-RVn"/>
+                                <include reference="wG3-eQ-N8k"/>
+                                <include reference="GXj-Ae-EGV"/>
+                                <include reference="tQI-ch-ZZf"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H3n-4w-5J3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="978" y="-351"/>
+        </scene>
         <!--Ruta View Controller-->
         <scene sceneID="MiC-oP-3vL">
             <objects>
@@ -746,7 +870,7 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W0z-lR-nyH">
                                 <rect key="frame" x="0.0" y="556" width="600" height="44"/>
                                 <items>
-                                    <barButtonItem width="116" style="plain" systemItem="fixedSpace" id="XXt-0p-bx7"/>
+                                    <barButtonItem width="77" style="plain" systemItem="fixedSpace" id="XXt-0p-bx7"/>
                                     <barButtonItem image="mapa-solo" id="vGr-Jq-4Mc">
                                         <connections>
                                             <action selector="showRouteOptions:" destination="qJU-90-20U" id="1SK-Ac-hpE"/>
@@ -756,6 +880,14 @@
                                     <barButtonItem image="qr-solo" id="jnl-lf-9xj">
                                         <connections>
                                             <segue destination="4UY-qh-Shs" kind="show" id="qb6-Ki-eKe"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="24" style="plain" systemItem="fixedSpace" id="aGp-Z3-nGa"/>
+                                    <barButtonItem title="Eventos" id="wQp-Kf-hCq"/>
+                                    <barButtonItem width="24" style="plain" systemItem="fixedSpace" id="8MV-bo-ErW"/>
+                                    <barButtonItem title="ℹ︎" id="Y6Z-i9-khC">
+                                        <connections>
+                                            <action selector="mostrarAcerca:" destination="qJU-90-20U" id="Ukt-Tc-vNT"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
@@ -819,6 +951,6 @@
         <image name="qr-solo" width="21" height="21"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="suR-tc-VuH"/>
+        <segue reference="qb6-Ki-eKe"/>
     </inferredMetricsTieBreakers>
 </document>

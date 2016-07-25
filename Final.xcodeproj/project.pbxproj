@@ -37,6 +37,7 @@
 		9B6CEFF81D42BC6800048296 /* hdar_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6CEFF41D42BC6800048296 /* hdar_close@2x.png */; };
 		9B6CEFF91D42BC6800048296 /* hdar_close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B6CEFF51D42BC6800048296 /* hdar_close@3x.png */; };
 		9B6CEFFB1D42C5C700048296 /* TestAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6CEFFA1D42C5C700048296 /* TestAnnotationView.swift */; };
+		9B9445A11D467A9B00F6D1EF /* AcercaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B9445A01D467A9B00F6D1EF /* AcercaViewController.swift */; };
 		9BA5B54A1D3939700011A30C /* albums-blanco-64.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA5B5491D3939700011A30C /* albums-blanco-64.png */; };
 		9BA5B54C1D393DAF0011A30C /* camara-blancox64.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA5B54B1D393DAF0011A30C /* camara-blancox64.png */; };
 		9BA5B54E1D393FDE0011A30C /* default-placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BA5B54D1D393FDE0011A30C /* default-placeholder.png */; };
@@ -132,6 +133,7 @@
 		9B6CEFF41D42BC6800048296 /* hdar_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hdar_close@2x.png"; sourceTree = "<group>"; };
 		9B6CEFF51D42BC6800048296 /* hdar_close@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hdar_close@3x.png"; sourceTree = "<group>"; };
 		9B6CEFFA1D42C5C700048296 /* TestAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAnnotationView.swift; sourceTree = "<group>"; };
+		9B9445A01D467A9B00F6D1EF /* AcercaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcercaViewController.swift; sourceTree = "<group>"; };
 		9BA5B5491D3939700011A30C /* albums-blanco-64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "albums-blanco-64.png"; sourceTree = "<group>"; };
 		9BA5B54B1D393DAF0011A30C /* camara-blancox64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camara-blancox64.png"; sourceTree = "<group>"; };
 		9BA5B54D1D393FDE0011A30C /* default-placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "default-placeholder.png"; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 				9BA5B5611D3B68010011A30C /* CapturaViewController.swift */,
 				9BA5B56D1D3CB3E40011A30C /* DetalleRutaViewController.swift */,
 				9B6CEFFA1D42C5C700048296 /* TestAnnotationView.swift */,
+				9B9445A01D467A9B00F6D1EF /* AcercaViewController.swift */,
 			);
 			path = Final;
 			sourceTree = "<group>";
@@ -454,6 +457,7 @@
 				9BA5B5591D396B040011A30C /* Rutas.xcdatamodeld in Sources */,
 				9B6CEFEA1D42BC0400048296 /* ARConfiguration.swift in Sources */,
 				9B6CEFEB1D42BC0400048296 /* ARTrackingManager.swift in Sources */,
+				9B9445A11D467A9B00F6D1EF /* AcercaViewController.swift in Sources */,
 				9BA5B55E1D3B615F0011A30C /* NVC.swift in Sources */,
 				9B2FC1DD1D32FAF300ED63CD /* ViewController.swift in Sources */,
 				9B6CEFE81D42BC0400048296 /* ARAnnotation.swift in Sources */,

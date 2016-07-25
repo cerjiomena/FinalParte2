@@ -196,6 +196,22 @@ class DetalleRutaViewController: UIViewController, MKMapViewDelegate, WCSessionD
         return anotaciones
     }
     
+    @IBAction func compartir(sender: AnyObject) {
+        
+        var sharingItems = [AnyObject]()
+        
+        let arreglo = self.rutas?.componentsSeparatedByString("|")
+        
+        for i in 0..<arreglo!.count {
+            var columna = arreglo![i].componentsSeparatedByString(",")
+            
+            sharingItems.append("")
+            sharingItems.append(" \(columna[0]) : latitud \(columna[1]) longitud \(columna[2]) \n \n")
+        }
+
+        let actividadRD=UIActivityViewController(activityItems: sharingItems, applicationActivities: nil)
+        self.presentViewController(actividadRD,animated: true, completion:nil)
+    }
     
     /*
     // MARK: - Navigation
