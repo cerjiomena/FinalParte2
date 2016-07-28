@@ -26,8 +26,6 @@ class ListadoEventosController: UITableViewController {
         let urls: String = "http://104.236.91.248/mexico"
         let url = NSURL(string: urls)
         let datos = NSData(contentsOfURL: url!)
-        print("******")
-        print(datos)
         if datos == nil{
             let alert = UIAlertController(title:"Error", message: "No hay conexion a Internet", preferredStyle: .Alert)
             alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
