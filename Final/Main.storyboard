@@ -753,6 +753,7 @@
                         <viewControllerLayoutGuide type="bottom" id="pcZ-5E-6IJ"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="lNq-Qo-7gh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acerca del proyecto final:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISU-li-v6o">
@@ -815,14 +816,14 @@
                             <mask key="constraints">
                                 <exclude reference="3z9-Ij-XhC"/>
                                 <exclude reference="5yS-ya-4aw"/>
-                                <exclude reference="4FJ-Sa-GE1"/>
-                                <exclude reference="6qz-Zv-ZKs"/>
-                                <exclude reference="bxF-3e-NIj"/>
                                 <exclude reference="6lZ-ng-fgT"/>
                                 <exclude reference="jkl-aC-RVn"/>
                                 <exclude reference="wG3-eQ-N8k"/>
                                 <exclude reference="GXj-Ae-EGV"/>
                                 <exclude reference="tQI-ch-ZZf"/>
+                                <exclude reference="4FJ-Sa-GE1"/>
+                                <exclude reference="6qz-Zv-ZKs"/>
+                                <exclude reference="bxF-3e-NIj"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -836,14 +837,14 @@
                             <mask key="constraints">
                                 <include reference="3z9-Ij-XhC"/>
                                 <include reference="5yS-ya-4aw"/>
-                                <include reference="4FJ-Sa-GE1"/>
-                                <include reference="6qz-Zv-ZKs"/>
-                                <include reference="bxF-3e-NIj"/>
                                 <include reference="6lZ-ng-fgT"/>
                                 <include reference="jkl-aC-RVn"/>
                                 <include reference="wG3-eQ-N8k"/>
                                 <include reference="GXj-Ae-EGV"/>
                                 <include reference="tQI-ch-ZZf"/>
+                                <include reference="4FJ-Sa-GE1"/>
+                                <include reference="6qz-Zv-ZKs"/>
+                                <include reference="bxF-3e-NIj"/>
                             </mask>
                         </variation>
                     </view>
@@ -851,6 +852,70 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H3n-4w-5J3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="978" y="-351"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ISe-iV-bBn">
+            <objects>
+                <navigationController storyboardIdentifier="navListadoEventos" id="gS5-Sb-IjA" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HQZ-CW-GAa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Tzn-zg-U3Z" kind="relationship" relationship="rootViewController" id="kk7-E4-wUy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SPb-ZY-WKO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1635" y="-328"/>
+        </scene>
+        <!--Listado Eventos-->
+        <scene sceneID="XH7-Me-naL">
+            <objects>
+                <tableViewController storyboardIdentifier="listadoEventos" id="Tzn-zg-U3Z" userLabel="Listado Eventos" customClass="ListadoEventosController" customModule="Final" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="79l-4a-u3y">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="90" id="m7h-95-bur" userLabel="Cell">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" tableViewCell="m7h-95-bur" id="Vl3-5Q-Qyq">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="USJ-Gv-Hz3">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                            <variation key="widthClass=compact" fixedFrame="YES">
+                                                <rect key="frame" x="0.0" y="0.0" width="89" height="89"/>
+                                            </variation>
+                                        </imageView>
+                                    </subviews>
+                                    <variation key="default">
+                                        <mask key="subviews">
+                                            <exclude reference="USJ-Gv-Hz3"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="widthClass=compact">
+                                        <mask key="subviews">
+                                            <include reference="USJ-Gv-Hz3"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Tzn-zg-U3Z" id="vCT-pl-aeN"/>
+                            <outlet property="delegate" destination="Tzn-zg-U3Z" id="SyZ-Sl-T0S"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Listado Eventos" id="N8W-4F-DIe" userLabel="Listado Eventos"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2UL-gw-Ykc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2385" y="-328"/>
         </scene>
         <!--Ruta View Controller-->
         <scene sceneID="MiC-oP-3vL">
@@ -883,7 +948,11 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem width="24" style="plain" systemItem="fixedSpace" id="aGp-Z3-nGa"/>
-                                    <barButtonItem title="Eventos" id="wQp-Kf-hCq"/>
+                                    <barButtonItem title="Eventos" id="wQp-Kf-hCq">
+                                        <connections>
+                                            <action selector="mostrarEventos:" destination="qJU-90-20U" id="oKT-v6-iRw"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem width="24" style="plain" systemItem="fixedSpace" id="8MV-bo-ErW"/>
                                     <barButtonItem title="ℹ︎" id="Y6Z-i9-khC">
                                         <connections>

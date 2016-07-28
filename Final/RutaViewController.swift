@@ -162,7 +162,7 @@ class RutaViewController: UIViewController, CLLocationManagerDelegate, MKMapView
             
             if(error != nil) {
                 
-                print("Error al obtener la ruta")
+                //print("Error al obtener la ruta")
             } else {
                 self.muestraRuta(respuesta!)
             }
@@ -175,10 +175,10 @@ class RutaViewController: UIViewController, CLLocationManagerDelegate, MKMapView
             
             mapa.addOverlay(ruta.polyline, level: MKOverlayLevel.AboveRoads)
             
-            for paso in ruta.steps {
+            /*for paso in ruta.steps {
                 
                 print(paso.instructions)
-            }
+            }*/
         }
         
         /*let centro = origen.placemark.coordinate
@@ -319,5 +319,15 @@ class RutaViewController: UIViewController, CLLocationManagerDelegate, MKMapView
         
     }
 
+    @IBAction func mostrarEventos(sender: AnyObject) {
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        
+        
+        let lvc: UINavigationController = storyboard.instantiateViewControllerWithIdentifier("navListadoEventos") as! UINavigationController
+        lvc.view.backgroundColor = UIColor.darkGrayColor()
+        lvc.modalPresentationStyle = UIModalPresentationStyle.OverCurrentContext
+        
+        self.presentViewController(lvc, animated: true, completion: nil)
+    }
 
 }
