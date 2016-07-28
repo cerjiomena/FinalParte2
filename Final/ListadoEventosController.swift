@@ -60,7 +60,7 @@ class ListadoEventosController: UITableViewController {
                         
                         self.info.append([fecha,nombre,descripcion])
                         self.imagenes.append(caratula!)
-                        print(nombre)
+                        
                     }
                 }
                 else
