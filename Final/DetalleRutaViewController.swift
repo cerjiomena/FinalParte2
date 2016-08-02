@@ -150,7 +150,23 @@ class DetalleRutaViewController: UIViewController, MKMapViewDelegate, WCSessionD
     }
     
     @IBAction func iniciarRAG(sender: AnyObject) {
-        iniciarVisualizacionRAG()
+        
+        //Comprobamos si el dispositivo tiene cámara y si la tiene, si tenemos una ruta activa
+        let result = ARViewController.createCaptureSession()
+        
+        if result.error != nil
+        {
+            let alerta = UIAlertController(title: "Escaneado no soportado", message: "Su dispositivo no está soportado. Utilice un dispositivo con cámara", preferredStyle: .Alert)
+            let accionOK = UIAlertAction (title: "OK", style: .Default, handler: nil)
+            alerta.addAction(accionOK)
+            self.presentViewController(alerta, animated: true, completion: nil)
+            
+        } else {
+            iniciarVisualizacionRAG()
+
+            
+        }
+        
     }
     
     func iniciarVisualizacionRAG() {
