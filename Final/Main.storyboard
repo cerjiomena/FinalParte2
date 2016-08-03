@@ -788,7 +788,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="BC9-JM-mhx" firstAttribute="leading" secondItem="lNq-Qo-7gh" secondAttribute="leading" id="3z9-Ij-XhC"/>
                             <constraint firstItem="ISU-li-v6o" firstAttribute="centerX" secondItem="6BW-3S-hpO" secondAttribute="centerX" id="4FJ-Sa-GE1">
@@ -903,7 +903,7 @@
                                         </mask>
                                     </variation>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
